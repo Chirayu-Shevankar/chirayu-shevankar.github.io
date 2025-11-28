@@ -1,7 +1,12 @@
 body {
-    background: linear-gradient(#0a0f1a, #05070c);
+    margin: 0;
+    background: url('bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: white;
 }
-
 
 header {
     display: flex;
