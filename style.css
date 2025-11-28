@@ -1,7 +1,12 @@
+/* Restore original background */
 body {
+    margin: 0;
     background: linear-gradient(#0a0f1a, #05070c);
+    font-family: Arial, sans-serif;
+    color: white;
 }
 
+/* Original header */
 header {
     display: flex;
     justify-content: space-between;
@@ -23,6 +28,7 @@ nav a {
     font-size: 18px;
 }
 
+/* Hero (with original aero blur image) */
 .hero {
     text-align: center;
     padding: 120px 20px;
@@ -35,6 +41,7 @@ nav a {
     position: relative;
 }
 
+/* Tint overlay for hero */
 .hero::before {
     content: "";
     position: absolute;
@@ -45,9 +52,28 @@ nav a {
     z-index: 0;
 }
 
+/* Restore hero text */
 .hero h2 {
     font-size: 40px;
-    color: #00eaff;
+    color: #e8faff;
+    text-shadow:
+        0 0 20px rgba(0, 150, 255, 0.6),
+        0 0 30px rgba(0, 180, 255, 0.3);
+}
+
+.hero p {
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 18px;
+    background: #00eaff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 .hero * {
@@ -55,6 +81,38 @@ nav a {
     z-index: 1;
 }
 
+/* Restore features section */
+.projects {
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 25px;
+}
+
+/* Original dark cards */
+.card {
+    background: #111829;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-8px);
+    background: #1b2340;
+}
+
+/* Restore about + contact */
+.about, .contact {
+    padding: 70px 40px;
+    text-align: center;
+}
+
+/* Restore download section */
 .download {
     padding: 70px 40px;
     text-align: center;
@@ -72,66 +130,10 @@ nav a {
     font-weight: bold;
 }
 
-
-.hero button {
-    margin-top: 20px;
-    padding: 10px 25px;
-    font-size: 18px;
-    background: #00eaff;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.projects {
-    padding: 70px 40px;
-    text-align: center;
-}
-
-.grid {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    margin-top: 25px;
-}
-
-.card {
-    background: #111829;
-    padding: 20px;
-    border-radius: 12px;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-    background: #1b2340;
-}
-
-.about, .contact {
-    padding: 70px 40px;
-    text-align: center;
-}
-
+/* Restore footer */
 footer {
     padding: 20px;
     text-align: center;
     background: #0f1525;
     color: #8ea0c7;
-}
-
-.hero h2 {
-    font-size: 40px;
-    color: #e8faff;
-    text-shadow: 0 0 20px rgba(0, 150, 255, 0.6);
-}
-
-.hero p {
-    font-size: 20px;
-    opacity: 0.9;
-}
-
-.hero h2 {
-    text-shadow:
-        0 0 15px rgba(0, 180, 255, 0.4),
-        0 0 30px rgba(0, 180, 255, 0.2);
 }
