@@ -35,11 +35,27 @@ nav a {
     background-repeat: no-repeat;
     backdrop-filter: blur(10px);
     color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 10, 30, 0.45); /* subtle blue tint */
+    backdrop-filter: blur(12px);
+    z-index: 0;
 }
 
 .hero h2 {
     font-size: 40px;
     color: #00eaff;
+}
+
+.hero * {
+    position: relative;
+    z-index: 1;
 }
 
 .download {
