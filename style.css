@@ -29,7 +29,12 @@ nav a {
 .hero {
     text-align: center;
     padding: 120px 20px;
-    background: linear-gradient(135deg, #00111f, #002b43);
+    background: url('aero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+    color: white;
 }
 
 .hero h2 {
@@ -99,4 +104,15 @@ footer {
     text-align: center;
     background: #0f1525;
     color: #8ea0c7;
+}
+
+.hero h2 {
+    font-size: 40px;
+    color: #e8faff;
+    text-shadow: 0 0 20px rgba(0, 150, 255, 0.6);
+}
+
+.hero p {
+    font-size: 20px;
+    opacity: 0.9;
 }
